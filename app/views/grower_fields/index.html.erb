@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Grower Fields</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Grower</th>
+      <th>Field</th>
+      <th>Assign date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @grower_fields.each do |grower_field| %>
+      <tr>
+        <td><%= grower_field.grower_id %></td>
+        <td><%= grower_field.field_id %></td>
+        <td><%= grower_field.assign_date %></td>
+        <td><%= link_to 'Show', grower_field %></td>
+        <td><%= link_to 'Edit', edit_grower_field_path(grower_field) %></td>
+        <td><%= link_to 'Destroy', grower_field, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Grower Field', new_grower_field_path %>

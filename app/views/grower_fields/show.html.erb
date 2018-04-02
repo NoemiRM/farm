@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Grower:</strong>
+  <%= @grower_field.grower_id %>
+</p>
+
+<p>
+  <strong>Field:</strong>
+  <%= @grower_field.field_id %>
+</p>
+
+<p>
+  <strong>Assign date:</strong>
+  <%= @grower_field.assign_date %>
+</p>
+
+<%= link_to 'Edit', edit_grower_field_path(@grower_field) %> |
+<%= link_to 'Back', grower_fields_path %>

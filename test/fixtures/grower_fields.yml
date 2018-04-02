@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  grower_id: 1
+  field_id: 1
+  assign_date: 2018-03-26
+
+two:
+  grower_id: 1
+  field_id: 1
+  assign_date: 2018-03-26
