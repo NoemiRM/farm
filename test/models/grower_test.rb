@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class GrowerTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "Should not save with an invalid phone" do
+    grower = growers(:invalid_phone)
+    
+    assert_not grower.save
+  end
 end
